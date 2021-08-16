@@ -24,7 +24,6 @@ header {
     background: white;
     box-shadow: 0 4px 25px -22px black;
     z-index: 2;
-    border-bottom: red 1px solid;
 }
 
 .header-content {
@@ -34,15 +33,19 @@ header {
     justify-content: space-between;
 }
 
-.logo {
-    height: 80px;
+.logo a {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 75px;
+    width: 100%;
 }
 
-.logo h1 b {
-    color: red;
+.logo:hover {
+    border-bottom: #c500ff solid 5px;
+}
+
+aside:hover {
+    border-top: green solid 5px;
+    border-left: green solid 5px;
 }
 
 .menu {
@@ -68,25 +71,14 @@ header {
     position: relative;
 }
 
-
-/*.menu nav ul li :before{
-    content: '';
-    width: 100%;
-    height: 4px;
-    background: red;
-    position: absolute;
-    top: 0;
-    left: 0;
-}*/
-
 .menu nav ul li a {
-    color: gray;
+    color: green;
     font-size: 18px;
     transition: color 200ms;
 }
 
 .menu nav ul li a:hover {
-    color: red;
+    color: #c500ff;
 }
 
 .IconNav {
@@ -114,47 +106,14 @@ header {
     background: whitesmoke;
 }
 
-#dropdownMenuButton {
-    background-color: white;
-    border: none;
-    color: black;
-    outline: none;
-    font-size: 18px;
-    color: gray;
-}
-
-#dropdownMenuButton:hover {
-    color: red;
-}
-
 .dropdown-menu a:hover {
     text-decoration: underline;
-}
-
-
-/*Flechas navegacion*/
-
-.contenedor_FlechasNav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.contenedor_FlechasNav button {
-    border: none;
-    outline: none;
-    background: transparent;
-    font-size: 25px;
-    margin-top: 10px;
-    color: red;
-    margin-right: 10px;
-    margin-left: 10px;
 }
 
 #button-up {
     width: 35px;
     height: 35px;
-    background: red;
+    background: #c500ff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -187,7 +146,7 @@ header {
 .container-footer footer {
     width: 100%;
     margin: auto;
-    border-top: red 1px solid;
+    padding-top: 10px;
 }
 
 .container-footer footer .redes-footer {
@@ -287,11 +246,6 @@ footer .redes-footer .fa-instagram:hover {
     .menu nav ul li a {
         margin-top: 40px;
         color: lightgray;
-    }
-    #dropdownMenuButton {
-        margin-top: 40px;
-        color: lightgray;
-        padding-left: 0;
     }
     .IconNav {
         width: 20px;

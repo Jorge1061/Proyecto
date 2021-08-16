@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,user-scalable=no, initial-scale=1.0, maximum-scale=1.0,
+    minimum-scale=1.0">
+    <meta name="keywords" content="HTML5,CCS3,JAVASCRIPT,JQUERY,JSON,REST">
+    <meta name="author" content="Sebastian Montero">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/57273a9c77.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="CSS/General.css">
+    <link rel="stylesheet" type="text/css" href="CSS/blogMetal.css">
+    <title>La biblioteca del Rock y Metal</title>
+
+</head>
+
+<body>
+
+    <!--Header y Menu-->
+
+    <header>
+        <div class="header-content">
+
+            <div class="logo">
+                <h1>Biblioteca <b>Rock y Metal</b></h1>
+            </div>
+            <div class="menu" id="show-menu">
+                <nav>
+                    <ul>
+                        <li><a href="index.html"><i class="fas fa-home IconNav"></i> Inicio</a></li>
+
+                        <li>
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i
+                                        class="fas fa-headphones-alt IconNav"></i> Contenido
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="BlogNoticias.html">Noticias</a>
+                                    <a class="dropdown-item" href="blogRock.html">Rock</a>
+                                    <a class="dropdown-item" href="blogMetal.html">Metal</a>
+                                    <a class="dropdown-item" href="Galeria.html">Galeria</a>
+                                </div>
+                            </div>
+
+                        </li>
+                        <li><a href="Contactanos.html"><i class="far fa-address-book IconNav"></i> Contactanos</a></li>
+                        <li><a href="Acerca.html"><i class="fas fa-id-card IconNav"></i> Acerca</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+        </div>
+        <div id="icon-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <!--Portada-->
+
+    <div class="container-all" id="move-content">
+        <div class="blog-container-cover">
+            <div class="container-info-cover">
+                <h1 class="texto-borde">¡Todas nuestras letras de Heavy Metal!</h1>
+                <p class="texto-borde">Disfruta las letras originales, traducidas, videos y audios en alta calidad</p>
+            </div>
+        </div>
+
+        <div class="container-posts">
+
+            <input type="radio" name="CategoriaM" id="TODOS" value="TODOS">
+            <input type="radio" name="CategoriaM" id="PowerMetal" value="PowerMetal">
+            <input type="radio" name="CategoriaM" id="DeathMetal" value="DeathMetal">
+            <input type="radio" name="CategoriaM" id="Melódico" value="Melódico">
+            <input type="radio" name="CategoriaM" id="Sinfónico" value="Sinfónico">
+
+            <div class="container-CategoriaM">
+                <label for="TODOS">Todos</label>
+                <label for="PowerMetal">Power Metal</label>
+                <label for="DeathMetal">Death Metal</label>
+                <label for="Melódico">Melódico</label>
+                <label for="Sinfónico">Sinfónico</label>
+            </div>
+
+            <div class="posts">
+                <div class="post" data-category="PowerMetal">
+                    <div class="ctn-img">
+                        <img src="img/Caegoria_M/CategoriaM_PhantomDivine.jpg" alt="KamelotPhantomDivine">
+                    </div>
+                    <h2>Phantom Divine</h2>
+                    <span>Artista: Kamelot</span>
+                    <ul class="ctn-tag">
+                        <li>Metal</li>
+                        <li>Power metal</li>
+                        <!--<li>Melódico</li>-->
+                        <li>Kamelot</li>
+                    </ul>
+                    <a href="PlantillaMusica.html" target="_Self"><button onclick="AsignarID('M1')">Ver
+                            canción</button></a>
+                </div>
+
+                <div class="post" data-category="DeathMetal">
+                    <div class="ctn-img">
+                        <img src="img/Caegoria_M/CategoriaM_WhatLiesAhead.jpg" alt="SemblantWhatLiesAheadAlbumCover">
+                    </div>
+                    <h2>What Lies Ahead</h2>
+                    <span>Artista: Semblant</span>
+                    <ul class="ctn-tag">
+                        <li>Metal</li>
+                        <li>Death metal</li>
+                        <!--<li>Melódico</li>-->
+                        <li>Semblant</li>
+                    </ul>
+                    <a href="PlantillaMusica.html" target="_Self"><button onclick="AsignarID('M2')">Leer
+                        canción</button></a>
+                </div>
+
+                <div class="post" data-category="DeathMetal">
+                    <div class="ctn-img">
+                        <img src="img/Caegoria_M/CategoriaM_InVertigo.jpg" alt="TheAgonistInVertigo">
+                    </div>
+                    <h2>In Vertigo</h2>
+                    <span>Artista: The Agonist</span>
+                    <ul class="ctn-tag">
+                        <li>Metal</li>
+                        <li>Death metal</li>
+                        <!--<li>Melódico</li>-->
+                        <li>The Agonist</li>
+                    </ul>
+                    <a href="PlantillaMusica.html" target="_Self"><button onclick="AsignarID('M3')">Leer
+                        canción</button></a>
+                </div>
+
+                <div class="post" data-category="Sinfónico">
+                    <div class="ctn-img">
+                        <img src="img/Caegoria_M/CategoriaM_Nightfall.jpg" alt="XandriaNightfall">
+                    </div>
+                    <h2>Nightfall</h2>
+                    <span>Artista: Xandria</span>
+                    <ul class="ctn-tag">
+                        <li>Metal</li>
+                        <li>Sinfónico</li>
+                        <li>Xandria</li>
+                    </ul>
+                    <a href="PlantillaMusica.html" target="_Self"><button onclick="AsignarID('M4')">Leer
+                        canción</button></a>
+                </div>
+
+                <div class="post" data-category="Sinfónico">
+                    <div class="ctn-img">
+                        <img src="img/Caegoria_M/CategoriaM_Noise.jpg" alt="NightwishNoise">
+                    </div>
+                    <h2>Noise</h2>
+                    <span>Artista: Nightwish</span>
+                    <ul class="ctn-tag">
+                        <li>Metal</li>
+                        <li>Sinfónico</li>
+                        <li>Nightwish</li>
+                    </ul>
+                    <a href="PlantillaMusica.html" target="_Self"><button onclick="AsignarID('M5')">Leer
+                        canción</button></a>
+                </div>
+
+                <div class="post" data-category="Melódico">
+                    <div class="ctn-img">
+                        <img src="img/Caegoria_M/CategoriaM_LosOlvidados.jpg" alt="InfamiaLosOlvidados">
+                    </div>
+                    <h2>Los Olvidados</h2>
+                    <span>Artista: Infamia</span>
+                    <ul class="ctn-tag">
+                        <li>Metal</li>
+                        <li>Melódico</li>
+                        <li>Infamia</li>
+                    </ul>
+                    <a href="PlantillaMusica.html" target="_Self"><button onclick="AsignarID('M6')">Leer
+                        canción</button></a>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="button-up">
+            <i class="fas fa-chevron-up"></i>
+        </div>
+
+        <div class="container-footer">
+            <footer>
+                <div class="contenedor_FlechasNav">
+                    <button onclick="goBack()"><i class="fas fa-arrow-circle-left"></i></button>
+                    <button onclick="goForward()"><i class="fas fa-arrow-circle-right"></i></button>
+                </div>
+                <div class="redes-footer">
+                    <a href="#"><i class="fab fa-facebook icon-redes-footer"></i></a>
+                    <a href="#"><i class="fab fa-linkedin icon-redes-footer"></i></a>
+                    <a href="#"><i class="fab fa-instagram icon-redes-footer"></i></a>
+                </div>
+                <hr>
+                <h4>2021 Biblioteca del Rock y Metal - Todos los derechos reservados</h4>
+            </footer>
+        </div>
+
+        <div id="scrips">
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+                integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+                crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+                integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+                crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+                integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+                crossorigin="anonymous"></script>
+            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+            <script src="JS/scrip.js"></script>
+            <script src="JS/ManejoDatosJSON.js"></script>
+        </div>
+    </div>
+</body>
+
+</html>
