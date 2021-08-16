@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,user-scalable=no, initial-scale=1.0, maximum-scale=1.0,
+    minimum-scale=1.0,shrink-to-fit=no">
+    <meta name="keywords" content="HTML5,CCS3,JAVASCRIPT,JQUERY,JSON,REST">
+    <meta name="author" content="Sebastian Montero">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/57273a9c77.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="CSS/General.css">
+    <!-- <link rel="stylesheet" type="text/css" href="CSS/Contenido.css">-->
+    <link rel="stylesheet" type="text/css" href="CSS/Acerca.css">
+    <title>La biblioteca del Rock y Metal</title>
+</head>
+
+<body>
+    <!--Header y Menu-->
+    <header>
+        <div class="header-content">
+
+            <div class="logo">
+                <h1>Biblioteca <b>Rock y Metal</b></h1>
+            </div>
+            <div class="menu" id="show-menu">
+                <nav>
+                    <ul>
+                        <li><a href="index.html"><i class="fas fa-home IconNav"></i> Inicio</a></li>
+
+                        <li>
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i
+                                        class="fas fa-headphones-alt IconNav"></i> Contenido
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="BlogNoticias.html">Noticias</a>
+                                    <a class="dropdown-item" href="blogRock.html">Rock</a>
+                                    <a class="dropdown-item" href="blogMetal.html">Metal</a>
+                                    <a class="dropdown-item" href="Galeria.html">Galeria</a>
+                                </div>
+                            </div>
+
+                        </li>
+                        <li><a href="Contactanos.html"><i class="far fa-address-book IconNav"></i> Contactanos</a></li>
+                        <li><a href="Acerca.html"><i class="fas fa-id-card IconNav"></i> Acerca</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+        </div>
+        <div id="icon-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <div class="container-all" id="move-content">
+
+        <div class="container-info">
+            <!--Contenido del Acerca-->
+            <div class="container-content">
+                <Article id="SeccionInfoPersonalCreador">
+                    <div class="secction1">
+                        <h1>Acerca del autor</h1>
+                        <img src="img/Adicionales/FotoAutor.jpg" alt="FotoSebastiánMontero">
+                    </div>
+                    <div class="secction2">
+                        <p>Soy <strong>Sebastián Montero Rodríguez, cédula
+                                2-0812-0688</strong>, tengo 20 años y soy estudiante de ingienería del software en la Universidad Técnica Nacional de Costa Rica. Desde que tengo uso de razón siempre me apasionó la técnología, y por ello con un objetivo
+                            claro aproveché distintas oportunidades para ampliar mis conocimientos y comprender a fondo el mundo de la informatica.
+                            <br> El camino ha sido largo y laborioso, sin embargo, estoy seguro que podré convertirme en un desarrollador de video juegos, mi objetivo final en esta carrera. Si desean consultar por ayuda informatica, me pueden contactar
+                            en <strong>smonteroro04@gmail.com</strong>, y mientras esté en mis capacidades ayudaré con todo gusto.
+                        </p>
+                    </div>
+                    <div class="secction3">
+                        <div id="carousel1" class="carousel slide carousel-fade" data-ride="carousel">
+                            <p class="infoPersonal" style="border-top: none;">Canciones recomendadas</p>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <iframe width="250" height="252" src="https://www.youtube.com/embed/rUf6_L8Wyt0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="frameVid"></iframe>
+                                </div>
+                                <div class="carousel-item">
+                                    <iframe width="250" height="252" src="https://www.youtube.com/embed/r85VW3y_T8I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                                <div class="carousel-item">
+                                    <iframe width="250" height="252" src="https://www.youtube.com/embed/QIedr_9_9hA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="frameVid"></iframe>
+                                </div>
+
+                                <div class="carousel-item">
+                                    <iframe width="250" height="252" src="https://www.youtube.com/embed/gGTAmmTiD_Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="frameVid"></iframe>
+                                </div>
+
+                                <div class="carousel-item">
+                                    <iframe width="250" height="252" src="https://www.youtube.com/embed/wNH3UVpYSSs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="frameVid"></iframe>
+                                </div>
+                                <div class="carousel-item">
+                                    <iframe width="250" height="252" src="https://www.youtube.com/embed/HdnTSXUWd3E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="frameVid"></iframe>
+                                </div>
+                            </div>
+
+                            <!--Controles NEXT y PREV-->
+                            <a class="carousel-control-prev" href="#carousel1" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carousel1" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                            <!--Controles de indicadores-->
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel1" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel1" data-slide-to="1"></li>
+                                <li data-target="#carousel1" data-slide-to="2"></li>
+                                <li data-target="#carousel1" data-slide-to="3"></li>
+                                <li data-target="#carousel1" data-slide-to="4"></li>
+                                <li data-target="#carousel1" data-slide-to="5"></li>
+                            </ol>
+
+                        </div>
+                    </div>
+                </Article>
+                <!--   <div class="container-aside">
+                    <aside>
+                        <h1>Acerca del autor</h1>
+                        <img src="img/FotoAutor.jpg" alt="FotoSebastiánMontero">
+                        <div class="SeccionInfoPersonal">
+                            <p class="infoPersonal">Soy <strong>Sebastián Montero Rodríguez, cédula
+                                    2-0812-0688</strong>, tengo 20 años y soy estudiante de ingienería del software en
+                                la Universidad
+                                Técnica Nacional de Costa Rica. Desde que tengo uso de razón siempre me apasionó la
+                                técnología, y por ello con un objetivo claro aproveché distintas oportunidades para
+                                ampliar mis conocimientos y comprender a fondo el mundo de la informatica.
+                                <br><br>
+                                El camino ha sido largo y laborioso, sin embargo, estoy seguro que podré convertirme en
+                                un desarrollador de video juegos, mi objetivo final en esta carrera. Si desean consultar
+                                por ayuda informatica, me pueden contactar en <strong>smonteroro04@gmail.com</strong>, y
+                                mientras esté en mis capacidades ayudaré con todo gusto.
+                            </p>
+                        </div>
+                        <div id="carousel1" class="carousel slide carousel-fade" data-ride="carousel">
+                            <p class="infoPersonal" style="border-top: none;">Canciones recomendadas por el autor</p>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <iframe width="250" height="252" src="https://www.youtube.com/embed/rUf6_L8Wyt0"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                </div>
+                                <div class="carousel-item">
+                                    <iframe width="250" height="252" src="https://www.youtube.com/embed/r85VW3y_T8I"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                </div>
+                                <div class="carousel-item">
+                                    <iframe width="250" height="252" src="https://www.youtube.com/embed/QIedr_9_9hA"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                </div>
+                                <div class="carousel-item">
+                                    <iframe width="250" height="252" src="https://www.youtube.com/embed/gGTAmmTiD_Y"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                </div>
+                                <div class="carousel-item">
+                                    <iframe width="250" height="252" src="https://www.youtube.com/embed/wNH3UVpYSSs"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                </div>
+                                <div class="carousel-item">
+                                    <iframe width="250" height="252" src="https://www.youtube.com/embed/HdnTSXUWd3E"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                </div>
+                            </div>
+                            <!--Controles NEXT y PREV-
+                            <a class="carousel-control-prev" href="#carousel1" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carousel1" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                            <!--Controles de indicadores
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel1" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel1" data-slide-to="1"></li>
+                                <li data-target="#carousel1" data-slide-to="2"></li>
+                                <li data-target="#carousel1" data-slide-to="3"></li>
+                                <li data-target="#carousel1" data-slide-to="4"></li>
+                                <li data-target="#carousel1" data-slide-to="5"></li>
+                            </ol>
+                        </div>
+                    </aside>
+                </div>-->
+                <article>
+                    <p>
+                        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" id="btn-AcercaDe" <h1 class="h1-personalizado">Acerca del sitio</h1>
+                        </button>
+                    </p>
+                    <div class="collapse.show" id="collapseExample">
+                        <div class="card card-body">
+                            <p>El origen de este sitio web se remonta a mediados del año 2021, comienzos del segundo cuatrimestre del periodo lectivo de la universidad técnica nacional de Costa Rica.
+                                <br><br> En el curso de diseño web, a los estudiantes se les solicitó crear un sitio web con tema libre siempre y cuando cumpliese las condiciones de mostrar funciones o caracteristicas especifícas de CSS, JavaScript, JQuery,
+                                HTML5 y Bootstrap. Yo, siendo parte de dicho curso elegí crear un sitio web que representara una de mis mayores pasiones: la música, en especifico los géneros músicales Rock and roll y Heavy Metal, junto con algunas variaciones
+                                de los mismos.
+                                <br><br> Con el paso del tiempo, nuevas ideas fueron aflorando en mi cabeza y con ello surgió la segunda sección ofrecida en el sitio web: noticias sobre música de dichos generos; desde filtraciones, clasificaciones según
+                                temas especificos e incluso polemicas, un servicio completo para todo aquel que disfrute la música inspiradora pero, al mismo tiempo quiera sentir la adrenalina y brutalidad que los instrumentos y la propia voz puede ofrecer.
+                            </p>
+                        </div>
+                    </div>
+
+
+                </article>
+            </div>
+        </div>
+
+        <div id="button-up">
+            <i class="fas fa-chevron-up"></i>
+        </div>
+
+        <div class="container-footer">
+            <footer>
+                <div class="contenedor_FlechasNav">
+                    <button onclick="goBack()"><i class="fas fa-arrow-circle-left"></i></button>
+                    <button onclick="goForward()"><i class="fas fa-arrow-circle-right"></i></button>
+                </div>
+                <div class="redes-footer">
+                    <a href="#"><i class="fab fa-facebook icon-redes-footer"></i></a>
+                    <a href="#"><i class="fab fa-linkedin icon-redes-footer"></i></a>
+                    <a href="#"><i class="fab fa-instagram icon-redes-footer"></i></a>
+                </div>
+                <hr>
+                <h4>2021 Biblioteca del Rock y Metal - Todos los derechos reservados</h4>
+            </footer>
+        </div>
+    </div>
+    <div id="scrips">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+        <script src="JS/scrip.js"></script>
+    </div>
+</body>
+
+</html>

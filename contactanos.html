@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,user-scalable=no, initial-scale=1.0, maximum-scale=1.0,
+    minimum-scale=1.0,shrink-to-fit=no">
+    <meta name="keywords" content="HTML5,CCS3,JAVASCRIPT,JQUERY,JSON,REST">
+    <meta name="author" content="Sebastian Montero">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/57273a9c77.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="CSS/General.css">
+    <!-- <link rel="stylesheet" type="text/css" href="CSS/Contenido.css">-->
+    <link rel="stylesheet" type="text/css" href="CSS/Contactanos.css">
+    <title>La biblioteca del Rock y Metal</title>
+</head>
+
+<body>
+    <!--Header y Menu-->
+    <header>
+        <div class="header-content">
+
+            <div class="logo">
+                <h1>Biblioteca <b>Rock y Metal</b></h1>
+            </div>
+            <div class="menu" id="show-menu">
+                <nav>
+                    <ul>
+                        <li><a href="index.html"><i class="fas fa-home IconNav"></i> Inicio</a></li>
+
+                        <li>
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i
+                                        class="fas fa-headphones-alt IconNav"></i> Contenido
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="BlogNoticias.html">Noticias</a>
+                                    <a class="dropdown-item" href="blogRock.html">Rock</a>
+                                    <a class="dropdown-item" href="blogMetal.html">Metal</a>
+                                    <a class="dropdown-item" href="Galeria.html">Galeria</a>
+                                </div>
+                            </div>
+
+                        </li>
+                        <li><a href="Contactanos.html"><i class="far fa-address-book IconNav"></i> Contactanos</a></li>
+                        <li><a href="Acerca.html"><i class="fas fa-id-card IconNav"></i> Acerca</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+        </div>
+        <div id="icon-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <div class="container-all" id="move-content">
+        <div class="container-info">
+            <br><br><br><br>
+            <!--Contenido del Acerca-->
+            <div class="container-content">
+
+                <article id="InfoContactoCreador">
+                    <h2>Información de contacto</h2>
+                    <table class="center" summary="Los grupos de música punk más famosos del Reino Unido">
+                        <thead>
+                            <tr>
+                                <th scope="col">Metodos de contacto</th>
+                                <th scope="col">Información del metodo</th>
+                                <th scope="col">Disponibilidad de respuesta</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Celular</th>
+                                <td>6014 7287</td>
+                                <td>Alta</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Facebook</th>
+                                <td><a href="https://www.facebook.com/sebastian.monterorodriguez.39">Sebastián
+                                        Montero</a></td>
+                                <td>Intermedia</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Correo</th>
+                                <td>proyectoUTN2021.ISW502@gmail.com</td>
+                                <td>Baja</td>
+                            </tr>
+
+                        </tbody>
+                        <tfoot>
+                        </tfoot>
+                    </table>
+                </article>
+
+                <article style="margin-top: 10px;">
+                    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCa7PkVS86hofA0px5NgEfqocc428iMQRo">
+                    </script>
+                    <input type="button" id="botonRuta" value="Trazar ruta" />
+                    <div id="mapaMostrado-canvas"></div>
+
+                </article>
+
+                <article style="margin-top: 10px;">
+                    <!-- action="php/enviar.php" -->
+                    <form action="php/enviar.php" method="POST" class="formulario">
+
+                        <h1 class="formulario_titulo">Contáctanos</h1>
+
+                        <input type="text" class="formulario_input">
+                        <label for="" class="formulario_label" id="name" name="name">Nombre completo</label>
+
+                        <input type="email" class="formulario_input" id="mail" name="mail" size="30" required>
+                        <label for="" class="formulario_label">Correo electrónico</label>
+
+                        <label for="" class="">Fecha de nacimiento</label>
+                        <input type="date" class="formulario_input" id="BornDate" name="BornDate" value="2000-01-01" min="1900-01-01" max="2021-12-31">
+
+                        <label for="">Mensaje</label>
+                        <textarea name="message" id="message" class="formulario_mensaje"></textarea>
+                        <br><br>
+                        <div class="genero">
+                            <label for="" class="">Género</label>
+                            <select name="gender" id="gender">
+                                <!--<option>Prefiero no decirlo</option>-->
+                                <option>Masculino</option>
+                                <option>Femenino</option>
+                            </select>
+                        </div>
+                        <br>
+                        <div class="ck_box_Container">
+                            <label for="" class="">Grado academico</label>
+                            <div class="ck_box_elements">
+                                <input type="checkbox" id="cbox1" value="primaria" class="CKBox" onclick="elegirAcademico(this)">
+                                <label for="cbox1">primaria</label>
+
+                                <input type="checkbox" id="cbox2" value="secundaria" class="CKBox" onclick="elegirAcademico(this)">
+                                <label for="cbox2">Secundaria</label>
+
+                                <input type="checkbox" id="cbox3" value="universidad" onclick="elegirAcademico(this)">
+                                <label for="cbox3">Universidad</label>
+                                <span id="academico" style="display: none;"></span>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="rango">
+                            <label for="" class="">Rango de ingreso</label>
+                            <input type="range" id="range" name="range">
+                        </div>
+                        <br>
+                        <input type="submit" name="ENVIAR" id="ENVIAR" value="ENVIAR" class="formulario_submit">
+                        <span name="age" id="age"></span>
+                    </form>
+                </article>
+
+            </div>
+        </div>
+        <!-- UTNIsw502* -->
+        <div id="button-up">
+            <i class="fas fa-chevron-up"></i>
+        </div>
+
+        <div class="container-footer">
+            <footer>
+                <div class="contenedor_FlechasNav">
+                    <button onclick="goBack()"><i class="fas fa-arrow-circle-left"></i></button>
+                    <button onclick="goForward()"><i class="fas fa-arrow-circle-right"></i></button>
+                </div>
+                <div class="redes-footer">
+                    <a href="#"><i class="fab fa-facebook icon-redes-footer"></i></a>
+                    <a href="#"><i class="fab fa-linkedin icon-redes-footer"></i></a>
+                    <a href="#"><i class="fab fa-instagram icon-redes-footer"></i></a>
+                </div>
+                <hr>
+                <h4>2021 Biblioteca del Rock y Metal - Todos los derechos reservados</h4>
+            </footer>
+        </div>
+        <div id="scrips">
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+            <script src="JS/scrip.js"></script>
+            <script src="JS/Mapa.js"></script>
+            <script src="JS/Formulario.js"></script>
+            <?php
+            include("enviar.php");
+            ?>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,user-scalable=no, initial-scale=1.0, maximum-scale=1.0,
+    minimum-scale=1.0,shrink-to-fit=no">
+    <meta name="keywords" content="MÚSICA,HTML5,JAVASCRIPT,JQUERY,CCS3,JSON,REST">
+    <meta name="author" content="Jorge Durán">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/57273a9c77.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="CSS/General.css">
+    <link rel="stylesheet" type="text/css" href="CSS/Contenido.css">
+    <title>La biblioteca del Rock y Metal</title>
+
+</head>
+
+<body>
+
+    <!--Header y Menu-->
+
+    <header>
+        <div class="header-content">
+
+            <div class="logo">
+                <h1>Biblioteca <b>Rock y Metal</b></h1>
+            </div>
+            <div class="menu" id="show-menu">
+                <nav>
+                    <ul>
+                        <li><a href="index.html"><i class="fas fa-home IconNav"></i> Inicio</a></li>
+
+                        <li>
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i
+                                        class="fas fa-headphones-alt IconNav"></i> Contenido
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="BlogNoticias.html">Noticias</a>
+                                    <a class="dropdown-item" href="blogRock.html">Rock</a>
+                                    <a class="dropdown-item" href="blogMetal.html">Metal</a>
+                                    <a class="dropdown-item" href="Galeria.html">Galeria</a>
+                                </div>
+                            </div>
+
+                        </li>
+                        <li><a href="Contactanos.html"><i class="far fa-address-book IconNav"></i> Contactanos</a></li>
+                        <li><a href="Acerca.html"><i class="fas fa-id-card IconNav"></i> Acerca</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+        </div>
+        <div id="icon-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <div class="container-all" id="move-content">
+        <!--Portada-->
+        <div id="carousel1" class="carousel slide carousel-fade" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+
+                    <div class="article-container-cover">
+                        <div class="container-info-cover">
+                            <h1 class="texto-borde">¡Lo mejor del rock y metal!</h1>
+                            <p class="texto-borde">Disfruta de los exitos que definieron las epocas en el rock y metal, desde música y videos hasta letras traducidas</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="carousel-item">
+
+                    <div class="article-container-cover" style=" background-image:url(img/Portadas/fondoPortada2.jpg);">
+                        <div class="container-info-cover">
+                            <h1 class="texto-borde">¡Noticias relevantes!</h1>
+                            <p class="texto-borde">Te ofrecemos noticias relacionadas con el Rock y el Metal, desde proximos lanzamientos hasta polemicas.</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="carousel-item">
+
+                    <div class="article-container-cover" style=" background-image:url(img/Portadas/fondoPortada3.jpg);">
+                        <div class="container-info-cover">
+                            <h1 class="texto-borde">¡Complacemos tus peticiones!</h1>
+                            <p class="texto-borde">Desde el apartado de contacto, podrás enviarnos solicitudes de canciones que deseas sean agregadas al sitio web.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!--Controles NEXT y PREV-->
+            <a class="carousel-control-prev" href="#carousel1" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carousel1" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+            <!--Controles de indicadores-->
+            <ol class="carousel-indicators">
+                <li data-target="#carousel1" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel1" data-slide-to="1"></li>
+                <li data-target="#carousel1" data-slide-to="2"></li>
+            </ol>
+
+        </div>
+
+        <!--Contenido del Home-->
+        <div class="container-content">
+            <article>
+                <h1 style="color: black;"><strong>¿Qué es este sitio web?</strong></h1>
+                <p>El objetivo de este sitio web, es compartir información veridica de forma agradable e intuitiva para los lectores. Es un trabajo de un fan del Rock y Metal, para compartir traducciones de letras, noticias sobre música y algunas clasificaciones
+                    de temas con la comunidad hispana que orbita alrededor de este estilo de música.
+                </p>
+                <h1 style="color: black;"><strong>¿Te interesa el origen de estos genéros músicales? A continuación te
+                        los
+                        explicamos:</strong></h1>
+                <br>
+                <ul class="botonera">
+                    <li><a href="#OrigenRock"><button type="button" class="btn-article btn btn-secondary "
+                                data-toggle="tooltip" data-placement="top"
+                                title="Muestra el segmento relacionado al género Rock">Historia del
+                                género Rock</button></a></li>
+                    <li><a href="#OrigenMetal"><button type="button" class="btn-article btn btn-secondary "
+                                data-toggle="tooltip" data-placement="top"
+                                title="Muestra el segmento relacionado al género Metal">Historia
+                                del
+                                género Metal</button></a></li>
+                </ul>
+                <br>
+                <h2 id="OrigenRock">Los origenes del Rock and roll</h2>
+                <p>El rock and roll como tal, tiene sus orígenes entre 1920 y 1940, pudiendo observarse, sin embargo, elementos propios de este género en producciones de rhythm and blues que datan incluso de los años 1920. En los orígenes del rock and roll
+                    existía una combinación de elementos los blues, boogie woogie, jazz y rhythm. El género también estaba influenciado por géneros tradicionales como el Hillbilly, la música folk de Irlanda, la música gospel y la música country. Regresando
+                    aún más atrás en el tiempo, se puede trazar el linaje del rock and roll hasta el antiguo distrito Five Points de Nueva York a mediados del siglo XIX, que fue el escenario de la primera fusión entre la música africana fuertemente rítmica
+                    y los géneros musicales europeos.</p>
+                <img src="img/Categoria_H/CategoriaH_HistoriaRock.jpg" alt="">
+                <br><br>
+                <p>En la década de 1940, el término "rock and roll" se empleaba ya en las valoraciones de grabaciones discográficas del periodista y columnista de Billboard Mauri Orodenker. En la edición del 30 de mayo de 1942, por ejemplo, describió la
+                    voz de Rosetta Tharpe en la reedición de "Rock Me" como "un canto espiritual de rock and roll". R&B (acuñado en 1949) era un término demasiado ambiguo, porque R&B era una categoría que incluía todas las formas de música negra excepto
+                    el jazz y el gospel. Cualquier otro estilo era considerado R&B pero como esta música rocking era nueva y revolucionaria, necesitaba un nuevo nombre, así que los disc jockeys, liderados por uno de Cleveland llamado Alan Freed, comenzaron
+                    a llamarlo rock and roll. Esto sucedió en 1951 y muchos DJ's usaron ese término, que también era utilizado para comercializar la música a una audiencia más amplia.</p>
+                <p>Hubo una gran explosión entre 1954 y 1960. De repente, Elvis, Bill Haley, Chuck Berry, Little Richard y otros estaban tocando rock and roll perfectamente desarrollado, como si hubiese surgido de la nada. Algunos lo describen como un momento
+                    mágico en un estudio de grabación, con músicos pasando el rato durante un descanso y tocando algo no ensayado, y de repente, accidentalmente inventan un tipo de música completamente nueva. Cuando el rock and roll se arraigó por completo
+                    tras la llegada del rockabilly, y más aún con la invasión británica de principios de los años 1960, se convirtió en una música basada en la guitarra, y los guitarristas, buscaban de modo natural a otros guitarristas como pioneros de
+                    la música. Así, las compañías discográficas se mostraron interesadas en reeditar el material antiguo en tanto y cuanto hubiese un guitarrista al frente. Pero el rock and roll de antes de 1954 estaba basado en el saxofón, con muy poca
+                    guitarra. Y mientras el saxo se había retirado virtualmente del rock and roll a partir de 1956, muchas de las estrellas primigenias permanecieron olvidadas. Lo mismo con el piano, que fue probablemente el instrumento en el que se tocó
+                    rock and roll por primera vez. A mediados de los años 1950, cuando el rock and roll era popular, cada compañía discográfica importante tenía unas cuantas megaestrellas que intentaban vender. Y luego surgieron los Beatles, grupo que
+                    marcaría una revolución, no solo en el aspecto musical, si no también en la moda, y la sociedad misma. Con ellos se daría el fenómeno conocido como "la ola inglesa". El movimiento a su vez influyó en muchas agrupaciones estadounidenses
+                    (como los byrds) alcanzaría su punto más álgido en 1965 y 1967.</p>
+                <span style="font-size: x-small;">Información procedente de <a
+                        href="https://es.wikipedia.org/wiki/Orígenes_del_rock_and_roll" target="_blank">Wikipedia</a>,
+                    creditos
+                    correspondientes.</span>
+                <br>
+
+                <h2 id="OrigenMetal">Los origenes del Heavy metal</h2>
+                <p>El heavy metal, o simplemente metal (pronunciado como métal, es un género musical que nació a finales de los años sesenta y principios de los setenta en el Reino Unido y también en los Estados Unidos, cuyos orígenes provienen del blues
+                    rock, hard rock y del rock psicodélico. Se caracteriza principalmente por sus guitarras fuertes y distorsionadas, ritmos enfáticos, los sonidos del bajo y la batería son más densos de lo habitual y la voz es generalmente aguda o gutural.</p>
+                <img src="img/Categoria_H/CategoriaH_HistoriaMetal.jpg" alt="">
+                <br><br>
+                <p>Según el historiador de música Ian Christe su definición provendría del lenguaje hippie; heavy sería un sinónimo de potente o profundo y metal describiría un estado de ánimo como la pesadez. En ese sentido la palabra heavy haría referencia
+                    a las bandas que tocaban con una amplificación mayor a lo que interpretaba la música popular de mediados de los sesenta. En cuanto a su contexto musical las primeras referencias al heavy metal sería el álbum debut de Iron Butterfly
+                    llamado precisamente Heavy, y su primer uso en las líricas de una canción sería en «Born to Be Wild» de los estadounidenses Steppenwolf publicado en junio de 1968</p>
+                <p>Hasta el día de hoy no existe un consenso claro de parte de los críticos, para definir cual fue la primera banda del heavy metal. Muchos de los críticos estadounidenses dan su apoyo a Led Zeppelin, mientas que los comentaristas británicos
+                    dan crédito a Black Sabbath y Deep Purple. También y en otros casos se nombran a Iron Butterfly, Steppenwolf, Vanilla Fudge o Blue Cheer como los pioneros del género. En lo que si llegan a coincidir es que en 1968 el sonido que se
+                    llamaría heavy metal empezó a crearse. En enero de ese año los estadounidenses Blue Cheer publicaron su sencillo «Summertime Blues» —cover de Eddie Cochran— que se extrajo de su álbum debut Vincebus Eruptum y que es considerado como
+                    el primer registro del verdadero heavy metal.73​ En el mismo mes Steppenwolf debutó con su álbum homónimo y que incluyó el sencillo «Born to Be Wild» que hace alusión a las motocicletas con el término «heavy metal thunder». Ya en junio
+                    Iron Butterfly lanzó el disco In-A-Gadda-Da-Vida que contenía el éxito del mismo nombre y que también se postuló como una de las primeras grabaciones del género.</p>
+                <span style="font-size: x-small;">Información procedente de <a
+                        href="https://es.wikipedia.org/wiki/Heavy_metal" target="_blank">Wikipedia</a>, creditos
+                    correspondientes.</span>
+            </article>
+
+            <div class="container-aside">
+                <aside>
+                    <img src="img/Categoria_N/CategoriaN_Polemica_TheAgonistYAlissa.jpg" alt="">
+                    <h2>¡Fuertes declaraciones de Vicky Psarakis, vocalista de The Agonist! </h2>
+                    <p><strong>Vicky Psarakis</strong>, ha sorprendido con las declaraciones en las que pone el punto de mira directamente en su antecesora, primero asegurando que habría tratado de impedir que su nuevo disco, titulado <strong>‘Orphans’</strong>                        , viera la luz, y más tarde con la dura afirmación que encabeza esta noticia.</p>
+                    <a href="PlantillaNoticias.html" target="_Self"><button onclick="AsignarID('N3')">Leer más</button></a>
+                </aside>
+
+                <aside>
+                    <img src="img/Categoria_N/CategoriaN_BanderaNegra_MagoDeOz.jpg" alt="">
+                    <h2>Mägo de Oz anuncia nuevo disco por sorpresa, Bandera Negra: fecha y primeros detalles</h2>
+                    <p>La banda, que ha estado trabajando en el disco durante los meses de pandemia, pretende recuperar el espíritu festivo de los trabajos anteriores a "Ira Dei". En él han colaborado SAUROM y Carlos Escobedo de SÔBER.</p>
+                    <a href="PlantillaNoticias.html" target="_Self"><button onclick="AsignarID('N1')">Leer más</button></a>
+                </aside>
+
+                <aside>
+                    <img src="img/Categoria_N/CategoriaN_Ranking_ChicaSexy.jpg" alt="">
+                    <h2>¿Conoces a las mujeres más sexys en el ámbito del Metal?</h2>
+                    <p>Las chicas que te mencionaremos a continuación se abrieron camino, en un mundo que al parecer estaba creado solo para hombres, impusieron moda, estilo y marcaron la diferencia, por eso no solo fue inspiración de muchos muchachos de
+                        las época si no también, de las muchachas que escuchaban su música y seguían sus estilos tan particulares.
+                        <br> <br> Y es que ser rudas no va de la mano con la apariencia física, estas hermosas y finas artistas de Rock y Metal, han alcanzado la fama por el talento que han demostrado tener en estos géneros musicales tan extremos.
+                    </p>
+                    <a href="PlantillaNoticias.html" target="_Self"><button onclick="AsignarID('N4')">Leer más</button></a>
+                </aside>
+            </div>
+
+        </div>
+
+        <div id="button-up">
+            <i class="fas fa-chevron-up"></i>
+        </div>
+
+        <div class="container-footer">
+            <footer>
+                <div class="contenedor_FlechasNav">
+                    <button onclick="goBack()"><i class="fas fa-arrow-circle-left"></i></button>
+                    <button onclick="goForward()"><i class="fas fa-arrow-circle-right"></i></button>
+                </div>
+                <div class="redes-footer">
+                    <a href="#"><i class="fab fa-facebook icon-redes-footer"></i></a>
+                    <a href="#"><i class="fab fa-linkedin icon-redes-footer"></i></a>
+                    <a href="#"><i class="fab fa-instagram icon-redes-footer"></i></a>
+                </div>
+                <hr>
+                <h4>2021 Biblioteca del Rock y Metal - Todos los derechos reservados</h4>
+            </footer>
+        </div>
+
+        <div id="scrips">
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+            <script src="JS/ManejoDatosJSON.js"></script>
+            <script src="JS/scrip.js"></script>
+        </div>
+    </div>
+</body>
+
+</html>

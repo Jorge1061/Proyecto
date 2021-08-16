@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,user-scalable=no, initial-scale=1.0, maximum-scale=1.0,
+    minimum-scale=1.0">
+    <meta name="keywords" content="HTML5,CCS3,JAVASCRIPT,JQUERY,JSON,REST">
+    <meta name="author" content="Sebastian Montero">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/57273a9c77.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="CSS/General.css">
+    <link rel="stylesheet" type="text/css" href="CSS/blogNoticias.css">
+    <title>La biblioteca del Rock y Metal</title>
+
+</head>
+
+<body>
+
+    <!--Header y Menu-->
+
+    <header>
+        <div class="header-content">
+
+            <div class="logo">
+                <h1>Biblioteca <b>Rock y Metal</b></h1>
+            </div>
+            <div class="menu" id="show-menu">
+                <nav>
+                    <ul>
+                        <li><a href="index.html"><i class="fas fa-home IconNav"></i> Inicio</a></li>
+
+                        <li>
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i
+                                        class="fas fa-headphones-alt IconNav"></i> Contenido
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="BlogNoticias.html">Noticias</a>
+                                    <a class="dropdown-item" href="blogRock.html">Rock</a>
+                                    <a class="dropdown-item" href="blogMetal.html">Metal</a>
+                                    <a class="dropdown-item" href="Galeria.html">Galeria</a>
+                                </div>
+                            </div>
+
+                        </li>
+                        <li><a href="Contactanos.html"><i class="far fa-address-book IconNav"></i> Contactanos</a></li>
+                        <li><a href="Acerca.html"><i class="fas fa-id-card IconNav"></i> Acerca</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+        </div>
+        <div id="icon-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <!--Portada-->
+
+    <div class="container-all" id="move-content">
+        <div class="blog-container-cover">
+            <div class="container-info-cover">
+                <h1 class="texto-borde">¡Todas nuestras noticias!</h1>
+                <p class="texto-borde">Disfruta de polémicas, lanzamientos y ranking</p>
+            </div>
+        </div>
+
+        <div class="container-posts">
+
+            <input type="radio" name="CategoriaM" id="TODOS" value="TODOS">
+            <input type="radio" name="CategoriaM" id="Rock" value="Rock">
+            <input type="radio" name="CategoriaM" id="Metal" value="Metal">
+            <input type="radio" name="CategoriaM" id="Polemica" value="Polemica">
+            <input type="radio" name="CategoriaM" id="Lanzamiento" value="Lanzamiento">
+            <input type="radio" name="CategoriaM" id="Ranking" value="Ranking">
+
+            <div class="container-CategoriaM">
+                <label for="TODOS">Todos</label>
+                <label for="Rock">Rock</label>
+                <label for="Metal">Metal</label>
+                <label for="Polemica">Polemica</label>
+                <label for="Lanzamiento">Lanzamiento</label>
+                <label for="Ranking">Ranking</label>
+            </div>
+
+            <div class="posts">
+                <div class="post" data-category="Lanzamiento Rock">
+                    <div class="ctn-img">
+                        <img src="img/Categoria_N/CategoriaN_BanderaNegra_MagoDeOz.jpg" alt="">
+                    </div>
+                    <h2>Mago de Oz anuncia nuevo álbum, ‘Bandera Negra’</h2>
+                    <span>La banda, que ha estado trabajando en el disco durante los meses de pandemia, pretende
+                        recuperar el espíritu festivo de los trabajos anteriores a "Ira Dei". Tendremos nuevo disco de
+                        Mägo de Oz el próximo 9 de abril de
+                        2021. Se llama Bandera Negra y el grupo lo ha estado grabando en secreto en plena
+                        pandemia.</span>
+                    <ul class="ctn-tag">
+                        <li>Rock</li>
+                        <li>Lanzamiento</li>
+                    </ul>
+                    <a href="PlantillaNoticias.html" target="_Self"><button onclick="AsignarID('N1')">Leer más</button></a>
+                </div>
+
+                <div class="post" data-category="Lanzamiento Metal">
+                    <div class="ctn-img">
+                        <img src="img/Categoria_N/CategoriaN_Orphans_TheAgonist.jpg" alt="">
+                    </div>
+                    <h2>The Agonist anuncia nuevo álbum, ‘Orphans’</h2>
+                    <span style="font-size: 18px;">‘Orphans’ es el sexto álbum de estudio de la banda originaria de
+                        Quebéc y el tercero con la
+                        vocalista griega Vicky Psarakis, prometiendo el álbum más melódico y extremo de su carrera,
+                        pasando del Metalcora al Brutal Death Metal.</span>
+                    <ul class="ctn-tag">
+                        <li>Metal</li>
+                        <li>Lanzamiento</li>
+                    </ul>
+                    <a href="PlantillaNoticias.html" target="_Self"><button onclick="AsignarID('N2')">Leer más</button></a>
+                </div>
+
+                <div class="post" data-category="Polemica Metal">
+                    <div class="ctn-img">
+                        <img src="img/Categoria_N/CategoriaN_Polemica_TheAgonistYAlissa.jpg" alt="">
+                    </div>
+                    <h2>¡Fuertes declaraciones de Vicky Psarakis, vocalista de The Agonist!</h2>
+                    <span style="font-size: 18px;">Vicky Psarakis, ha sorprendido con las declaraciones en las que pone
+                        el punto de mira
+                        directamente en su antecesora, primero asegurando que habría tratado de impedir que su nuevo
+                        disco, titulado ‘Orphans’ , viera la luz, y más tarde con la dura afirmación que encabeza esta
+                        noticia.</span>
+                    <ul class="ctn-tag">
+                        <li>Metal</li>
+                        <li>Polemica</li>
+                    </ul>
+                    <a href="PlantillaNoticias.html" target="_Self"><button onclick="AsignarID('N3')">Leer más</button></a>
+                </div>
+
+                <div class="post" data-category="Ranking Metal">
+                    <div class="ctn-img">
+                        <img src="img/Categoria_N/CategoriaN_Ranking_ChicaSexy.jpg" alt="">
+                    </div>
+                    <h2>¿Conoces a las mujeres más sexys en el ámbito del Metal?</h2>
+                    <span>Las chicas que te mencionaremos a continuación se abrieron camino, en un mundo que al parecer
+                        estaba creado solo para hombres, impusieron moda, estilo y marcaron la diferencia, por eso no
+                        solo fue inspiración de muchos muchachos de las época si no también, de las muchachas que
+                        escuchaban su música y seguían sus estilos tan particulares.</span>
+                    <ul class="ctn-tag">
+                        <li>Metal</li>
+                        <li>Ranking</li>
+                    </ul>
+                    <a href="PlantillaNoticias.html" target="_Self"><button onclick="AsignarID('N4')">Leer más</button></a>
+                </div>
+
+                <div class="post" data-category="Ranking Rock Polemica">
+                    <div class="ctn-img">
+                        <img src="img/Categoria_N/CategoriaN_Ranking_BandasPolemicas.jpg" alt="">
+                    </div>
+                    <h2>Las 10 más polémicas peleas y rupturas de las bandas de rock</h2>
+                    <span style="font-size: 18px;">Hay bandas que han marcado épocas, pero muchas de ellas lo han hecho
+                        no solo por el talento y
+                        su música: algunas han experimentado diferencias irreconciliables y que posteriormente, han
+                        conducido a polémicas separaciones.
+                        <br>
+                        <br>
+                        La afamada revista Rolling Stone seleccionó las 10 bandas cuyas rupturas han resultado más
+                        traumáticas, ya sea por su sorpresiva separación o por la magnitud de las peleas que llevaron a
+                        su alejamiento.</span>
+                    <ul class="ctn-tag">
+                        <li>Rock</li>
+                        <li>Polemica</li>
+                        <li>Ranking</li>
+                    </ul>
+                    <a href="PlantillaNoticias.html" target="_Self"><button onclick="AsignarID('N5')">Leer más</button></a>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="button-up">
+            <i class="fas fa-chevron-up"></i>
+        </div>
+
+        <div class="container-footer">
+            <footer>
+                <div class="contenedor_FlechasNav">
+                    <button onclick="goBack()"><i class="fas fa-arrow-circle-left"></i></button>
+                    <button onclick="goForward()"><i class="fas fa-arrow-circle-right"></i></button>
+                </div>
+                <div class="redes-footer">
+                    <a href="#"><i class="fab fa-facebook icon-redes-footer"></i></a>
+                    <a href="#"><i class="fab fa-linkedin icon-redes-footer"></i></a>
+                    <a href="#"><i class="fab fa-instagram icon-redes-footer"></i></a>
+                </div>
+                <hr>
+                <h4>2021 Biblioteca del Rock y Metal - Todos los derechos reservados</h4>
+            </footer>
+        </div>
+
+        <div id="scrips">
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+            <script src="JS/ManejoDatosJSON.js"></script>
+            <script src="JS/scrip.js"></script>
+        </div>
+    </div>
+</body>
+
+</html>
