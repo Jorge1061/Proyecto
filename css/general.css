@@ -43,7 +43,7 @@ header {
     border-bottom: #c500ff solid 5px;
 }
 
-aside:hover {
+.aside:hover {
     border-top: green solid 5px;
     border-left: green solid 5px;
 }
@@ -159,7 +159,6 @@ aside:hover {
 .container-footer footer .redes-footer .icon-redes-footer {
     font-size: 20px;
     margin: 10px;
-    background: lightgray;
     width: 30px;
     height: 30px;
     display: flex;
@@ -169,15 +168,19 @@ aside:hover {
     color: gray;
 }
 
-footer .redes-footer .fa-facebook:hover {
+.container-footer footer .redes-footer .icon-redes-footer:hover {
+    background: lightgray;
+}
+
+footer .redes-footer .fa-facebook {
     background: blue;
 }
 
-footer .redes-footer .fa-linkedin:hover {
+footer .redes-footer .fa-linkedin {
     background: cyan;
 }
 
-footer .redes-footer .fa-instagram:hover {
+footer .redes-footer .fa-instagram {
     background: linear-gradient(to top right, #fcde30, #e9712a, #D2313B, #AE4198, #7540A1, #5443A8);
 }
 

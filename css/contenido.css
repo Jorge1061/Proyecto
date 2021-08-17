@@ -214,8 +214,3 @@ article p {
 .container-aside {
     padding-right: 10px;
 }
-
-.galeria {
-    display: flex;
-    height: 50px;
-}
