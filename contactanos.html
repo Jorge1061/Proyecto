@@ -6,14 +6,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,user-scalable=no, initial-scale=1.0, maximum-scale=1.0,
     minimum-scale=1.0,shrink-to-fit=no">
-    <meta name="keywords" content="HTML5,CCS3,JAVASCRIPT,JQUERY,JSON,REST">
-    <meta name="author" content="Sebastian Montero">
+    <meta name="keywords" content="Clases, Música,Online,HTML5,JAVASCRIPT,JQUERY,CCS3,JSON,REST">
+    <meta name="author" content="Jorge Durán">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/57273a9c77.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="CSS/General.css">
-    <!-- <link rel="stylesheet" type="text/css" href="CSS/Contenido.css">-->
     <link rel="stylesheet" type="text/css" href="CSS/Contactanos.css">
     <title>La biblioteca del Rock y Metal</title>
+
+    <script src="https://kit.fontawesome.com/57273a9c77.js" crossorigin="anonymous"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCa7PkVS86hofA0px5NgEfqocc428iMQRo"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
 </head>
 
 <body>
@@ -22,29 +29,17 @@
         <div class="header-content">
 
             <div class="logo">
-                <h1>Biblioteca <b>Rock y Metal</b></h1>
+                <a href="index.html"><img src="img/logo.png" alt="Tus clases musicales"></a>
             </div>
             <div class="menu" id="show-menu">
                 <nav>
                     <ul>
-                        <li><a href="index.html"><i class="fas fa-home IconNav"></i> Inicio</a></li>
-
-                        <li>
-                            <div class="dropdown">
-                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i
-                                        class="fas fa-headphones-alt IconNav"></i> Contenido
-                                </button>
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                    <a class="dropdown-item" href="BlogNoticias.html">Noticias</a>
-                                    <a class="dropdown-item" href="blogRock.html">Rock</a>
-                                    <a class="dropdown-item" href="blogMetal.html">Metal</a>
-                                    <a class="dropdown-item" href="Galeria.html">Galeria</a>
-                                </div>
-                            </div>
-
-                        </li>
-                        <li><a href="Contactanos.html"><i class="far fa-address-book IconNav"></i> Contactanos</a></li>
-                        <li><a href="Acerca.html"><i class="fas fa-id-card IconNav"></i> Acerca</a></li>
+                        <li><a href="metodos.html">Nuestros métodos</a></li>
+                        <li><a href="videos.html">Videos</a></li>
+                        <li><a href="consejos.html">Consejos</a></li>
+                        <li><a href="acordes.html">Recomendaciones</a></li>
+                        <li><a href="contactanos.html">Contactanos</a></li>
+                        <li><a href="acerca.html">Acerca de...</a></li>
                     </ul>
                 </nav>
             </div>
@@ -59,60 +54,60 @@
         <div class="container-info">
             <br><br><br><br>
             <!--Contenido del Acerca-->
+
             <div class="container-content">
 
                 <article id="InfoContactoCreador">
-                    <h2>Información de contacto</h2>
-                    <table class="center" summary="Los grupos de música punk más famosos del Reino Unido">
-                        <thead>
-                            <tr>
-                                <th scope="col">Metodos de contacto</th>
-                                <th scope="col">Información del metodo</th>
-                                <th scope="col">Disponibilidad de respuesta</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row">Celular</th>
-                                <td>6014 7287</td>
-                                <td>Alta</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Facebook</th>
-                                <td><a href="https://www.facebook.com/sebastian.monterorodriguez.39">Sebastián
-                                        Montero</a></td>
-                                <td>Intermedia</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Correo</th>
-                                <td>proyectoUTN2021.ISW502@gmail.com</td>
-                                <td>Baja</td>
-                            </tr>
+                    <div id="info">
+                        <h2>Información de contacto</h2>
+                        <table class="center">
+                            <thead>
 
-                        </tbody>
-                        <tfoot>
-                        </tfoot>
-                    </table>
+                                <tr>
+                                    <th scope="col">¿Cómo contactarnos?</th>
+                                    <th scope="col">Información</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td scope="row">Facebook</th>
+                                        <td><a href="https://www.facebook.com/jorge.esteban.duran">Jorge Durán Acuña</a></td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">Teléfono</th>
+                                        <td>24416568</td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">Celular</th>
+                                        <td>62518701</td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">Correo</th>
+                                        <td>jorge.esteban.duran@gmai.com</td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                            </tfoot>
+                        </table>
+                        <input type="button" id="botonRuta" value="Trazar ruta" />
+                    </div>
+                    <div id="mapa">
+                        <h2>Nos encontramos en Pueblo Nuevo</h2>
+
+                        <div id="mapaMostrado-canvas"></div>
+                    </div>
+
                 </article>
 
                 <article style="margin-top: 10px;">
-                    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCa7PkVS86hofA0px5NgEfqocc428iMQRo">
-                    </script>
-                    <input type="button" id="botonRuta" value="Trazar ruta" />
-                    <div id="mapaMostrado-canvas"></div>
+                    <form method="POST" class="formulario">
 
-                </article>
+                        <h1>Formulario de consultas</h1>
 
-                <article style="margin-top: 10px;">
-                    <!-- action="php/enviar.php" -->
-                    <form action="php/enviar.php" method="POST" class="formulario">
+                        <input type="text" class="formulario_input" name="name" id="name">
+                        <label for="" class="formulario_label" name="name">Nombre completo</label>
 
-                        <h1 class="formulario_titulo">Contáctanos</h1>
-
-                        <input type="text" class="formulario_input">
-                        <label for="" class="formulario_label" id="name" name="name">Nombre completo</label>
-
-                        <input type="email" class="formulario_input" id="mail" name="mail" size="30" required>
+                        <input type="email" class="formulario_input" id="mail" name="mail" size="30">
                         <label for="" class="formulario_label">Correo electrónico</label>
 
                         <label for="" class="">Fecha de nacimiento</label>
@@ -141,17 +136,26 @@
 
                                 <input type="checkbox" id="cbox3" value="universidad" onclick="elegirAcademico(this)">
                                 <label for="cbox3">Universidad</label>
-                                <span id="academico" style="display: none;"></span>
+
                             </div>
                         </div>
                         <br>
                         <div class="rango">
-                            <label for="" class="">Rango de ingreso</label>
-                            <input type="range" id="range" name="range">
+                            <label for="" class="">Rango de ingreso (entre 0 y 1.000.000 colones)</label>
+                            <div class="valorDeslizar">
+                                <input type="text" id="textInput" value="500.000" disabled>
+                            </div>
+                            <div class="campoRange">
+                                <div class="valor Izquierda">0</div>
+                                <input type="range" id="range" name="range" min="0" max="1000000" value="500000" step="1" oninput="updateTextInput(this.value)" onchange="updateTextInput(this.value)">
+                                <div class="valor Derecha">1.000.000</div>
+                            </div>
+
                         </div>
                         <br>
-                        <input type="submit" name="ENVIAR" id="ENVIAR" value="ENVIAR" class="formulario_submit">
-                        <span name="age" id="age"></span>
+                        <input type="button" value="Enviar correo" onclick="sendEmail()" class="formulario_submit" />
+                        <p name="academico" style="display: none;" value="Ninguno" id="academico">Nulo</p>
+                        <input type="text" name="age" style="display: none;" value="21" id="age">
                     </form>
                 </article>
 
@@ -178,16 +182,9 @@
             </footer>
         </div>
         <div id="scrips">
-            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-            <script src="JS/scrip.js"></script>
             <script src="JS/Mapa.js"></script>
             <script src="JS/Formulario.js"></script>
-            <?php
-            include("enviar.php");
-            ?>
+            <script src="https://smtpjs.com/v3/smtp.js"></script>
         </div>
     </div>
 </body>

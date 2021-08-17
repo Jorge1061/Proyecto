@@ -21,10 +21,10 @@ function mapa() {
 
     function iniciar() {
         direccionesMostradas = new google.maps.DirectionsRenderer();
-        var UTN = new google.maps.LatLng(10.007000, -84.216611);
+        var iglesia = new google.maps.LatLng(10.01990962716926, -84.2250621593802);
         var opciones = {
             zoom: 15,
-            center: UTN
+            center: iglesia
         };
         mapaMostrado = new google.maps.Map(document.getElementById('mapaMostrado-canvas'), opciones);
         5
@@ -34,7 +34,7 @@ function mapa() {
 
     function calcularRuta() {
         var Inicio = new google.maps.LatLng(lat, lng);
-        var Fin = new google.maps.LatLng(10.00627719203927, -84.21693057205871);
+        var Fin = new google.maps.LatLng(10.01990962716926, -84.2250621593802);
         var request = {
             origin: Inicio,
             destination: Fin,

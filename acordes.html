@@ -5,19 +5,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,user-scalable=no, initial-scale=1.0, maximum-scale=1.0,
-    minimum-scale=1.0">
+    minimum-scale=1.0,shrink-to-fit=no">
     <meta name="keywords" content="Clases, Música,Online,HTML5,JAVASCRIPT,JQUERY,CCS3,JSON,REST">
     <meta name="author" content="Jorge Durán">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="CSS/General.css">
-    <link rel="stylesheet" type="text/css" href="CSS/videos.css">
-    <title>Videos de Tus Clases musicales</title>
+    <link rel="stylesheet" type="text/css" href="CSS/acordes.css">
+    <title>Acordes Tus Clases Musicales</title>
 
     <script src="https://kit.fontawesome.com/57273a9c77.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="JS/canciones.js"></script>
 
 </head>
 
@@ -51,35 +52,18 @@
         </div>
     </header>
 
-    <!--Portada-->
 
     <div class="container-all" id="move-content">
-        <div class="blog-container-cover">
+        <!--Contenido del Home-->
+        <div class="article-container-cover">
             <div class="container-info-cover">
-                <h1 class="hTexto-borde">¡Clases totalmente personalizadas y diversificadas!</h1>
-                <p class="pTexto-borde">Ofrecemos un balance teórico práctio adaptable a estudiantes de cualquier edad, manera de aprender y conocimientos previos.</p>
+                <h1 class="hTexto-borde">¡Algunas recomendaciones!</h1>
+                <p class="pTexto-borde">El siguiente playlist se realizó especificamente para que nuestros estudiantes tengan opciones cuando gusten estudiar una canción, todas las canciones de la lista están muy enrriquesidas musicalmente y representan un reto interesante para
+                    estudiantes de nivel bajo / medio, pero lo más importante es que estamos seguros que les ayudará a mejorar su nivel y técnica.</p>
             </div>
         </div>
-
-        <div class="container-posts">
-
-            <h2 id="estudiantes"><strong>Videos de estudiantes</strong></h2>
-            <p>Se realizan festivales en los que los estudiantes pueden participar y exponer sus talentos ya sea individual o colectivamente.</p>
-            <iframe src="https://www.facebook.com/plugins/video.php?height=308&href=https%3A%2F%2Fwww.facebook.com%2Fjorge.esteban.duran%2Fvideos%2F2147653622152649%2F&show_text=false&width=560&t=0" width="49%" height="308" style="border:none;overflow:hidden" scrolling="no"
-                frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
-            <iframe src="https://www.facebook.com/plugins/video.php?height=308&href=https%3A%2F%2Fwww.facebook.com%2Fjorge.esteban.duran%2Fvideos%2F1996437773940902%2F&show_text=false&width=560&t=0" width="49%" height="308" style="border:none;overflow:hidden" scrolling="no"
-                frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
-            <div id="tutoriales">
-                <h2 id="armonia"><strong>Clases de armonía avanazadas</strong></h2>
-                <p>Se estudian canciones con todos los grados de dificultad, incluyendo acordes complejos y técnicas como la rearmonizaciónque forjan una técnica y ejecución musical extraordinarias.</p>
-                <video id="video" src="video/Te Doy Gloria.mp4" controls></video>
-                <video id="video" src="video/Eres todo para mi.mp4" controls></video>
-            </div>
-            <a href="metodos.html"><strong>Más información sobre nuestros métodos de enseñanza...</strong></a>
-        </div>
-
-        <div id="button-up">
-            <i class="fas fa-chevron-up"></i>
+        <div class="container-content">
+            <div id="contenedor"></div>
         </div>
 
         <div class="container-footer">
