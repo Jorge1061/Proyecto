@@ -9,7 +9,7 @@ for (var i = 0; i < inputs.length; i++) {
     })
 }
 
-/*Scrip nivel de ducación academica*/
+
 var elementoacademico = document.getElementById('academico')
 var academicoElegidos = []
 
@@ -22,7 +22,7 @@ function elegirAcademico(element) {
     elementoacademico.innerHTML = academicoElegidos.join(', ')
 }
 
-/*Scrip calcular edad*/
+
 function getEdad() {
     const cadenaFecha = document.querySelector("#BornDate").value
     let hoy = new Date()
@@ -38,7 +38,7 @@ function getEdad() {
     document.querySelector("#age").value = edad
 }
 
-/*Validación campos formulario */
+
 var nombreValidado = false;
 var correoValidado = false;
 var edadValidada = false;
@@ -109,7 +109,6 @@ $('#message').blur(function() {
     }
 });
 
-/*Mostrar valor ingresado input Range */
 
 function updateTextInput(val) {
     var num = val.replace(/\./g, '');
@@ -123,7 +122,7 @@ function updateTextInput(val) {
     }
 }
 
-/*Scrip enviar correo */
+
 function sendEmail() {
     try {
         if (nombreValidado == true && correoValidado == true && edadValidada == true && mensajeValidado == true) {
@@ -148,12 +147,12 @@ function sendEmail() {
             })
 
             .then(function(message) {
-                alert("Correo enviado exitosamente")
+                alert("Correo enviado exitósamente")
                 location.reload();
             });
             console.log(nombreValidado, edadValidada, correoValidado, mensajeValidado);
         } else {
-            alert("Compruebe la integridad de los datos.")
+            alert("Datos errones, favor revisar.")
             console.log(nombreValidado, edadValidada, correoValidado, mensajeValidado);
         }
     } catch (error) {
