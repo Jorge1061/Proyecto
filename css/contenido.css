@@ -203,16 +203,6 @@ article img {
     }
 }
 
-footer h4 {
-    font-size: 15px;
-    border-top: gray solid 1px;
-    padding-top: 10px;
-}
-
-footer p {
-    text-align: center;
-}
-
 article h1 {
     color: green;
 }
@@ -223,4 +213,9 @@ article p {
 
 .container-aside {
     padding-right: 10px;
+}
+
+.galeria {
+    display: flex;
+    height: 50px;
 }

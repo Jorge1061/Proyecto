@@ -9,7 +9,7 @@
 .container-all {
     height: 100%;
     background-color: whitesmoke;
-    background-image: url(img/Adicionales/fondoBody.png);
+    background-image: url('../img/Adicionales/fondoBody.png');
 }
 
 
@@ -140,6 +140,7 @@ aside:hover {
 .container-footer {
     width: 100%;
     background: white;
+    background-image: url('../img/Adicionales/fondoFooter.jpg');
     margin-top: 20px;
 }
 
@@ -152,6 +153,7 @@ aside:hover {
 .container-footer footer .redes-footer {
     display: flex;
     justify-content: center;
+    padding-bottom: 30px;
 }
 
 .container-footer footer .redes-footer .icon-redes-footer {
@@ -169,33 +171,30 @@ aside:hover {
 
 footer .redes-footer .fa-facebook:hover {
     background: blue;
-    color: white;
 }
 
 footer .redes-footer .fa-linkedin:hover {
     background: cyan;
-    color: white;
 }
 
 footer .redes-footer .fa-instagram:hover {
     background: linear-gradient(to top right, #fcde30, #e9712a, #D2313B, #AE4198, #7540A1, #5443A8);
-    color: white;
-}
-
-.container-footer footer hr {
-    margin-top: 20px;
-    border: none;
-    height: 2px;
-    background: gray;
-    margin-bottom: 5px;
 }
 
 .container-footer h4 {
     text-align: center;
     margin-top: 5px;
-    color: gray;
+    color: green;
     font-weight: 500px;
-    padding-bottom: 10px;
+    padding: 30px 0 30px 0;
+    font-size: 15px;
+    border-top: green dashed 1px;
+}
+
+footer p {
+    padding-top: 30px;
+    text-align: center;
+    color: green;
 }
 
 

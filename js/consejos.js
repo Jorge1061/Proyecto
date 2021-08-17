@@ -1,11 +1,15 @@
+var c = 0;
+var length = 0;
+
 function consejos(url) {
     $.ajax({
         url: url,
         success: function(response) {
-            var obj = jQuery.parseJSON(response);
-            $.each(obj, function(key, value) {
-                alert(value.img_src);
-            });
+            if (length == 0)
+                for (length = 0; response[length + 1] != undefined; length++);
+            var content = $(".posts")[0];
+            content.innerHTML = "<img class='galeria' src='" + response[c].img_src + "' alt='Imagen no encontrada'>";
+
         },
         error: function(response) {
             alert(response);
@@ -14,6 +18,19 @@ function consejos(url) {
 }
 
 $(function() {
-    alert("hola");
-    consejos('json/consejosPiano.json');
+    consejos('https://jorge1061.github.io/Proyecto/json/consejosPiano.json');
+    $("#back").click(function() {
+        if (c == 0)
+            c = length;
+        else
+            c--;
+        consejos('https://jorge1061.github.io/Proyecto/json/consejosPiano.json');
+    });
+    $("#foward").click(function() {
+        if (c == length)
+            c = 0;
+        else
+            c++;
+        consejos('https://jorge1061.github.io/Proyecto/json/consejosPiano.json');
+    });
 })
