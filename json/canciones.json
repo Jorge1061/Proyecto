@@ -20,12 +20,12 @@
 
   {
     "id": "C3",
-    "banda": "Israel Houghton & New Breed",
-    "imagenPortada": "https://jorge1061.github.io/Proyecto/img/Canciones/In Jesus name.jpg",
-    "titulo": "In Jesus name",
-    "enlaceVideo": "https://www.youtube.com/watch?v=qehwr2MMTqg",
-    "enlaceAudio": "https://jorge1061.github.io/Proyecto/audio/In Jesus Name.mp3",
-    "acordes": "https://tabs.ultimate-guitar.com/tab/israel-new-breed/in-jesus-name-chords-1972731"
+    "banda": "Israel Houghton",
+    "imagenPortada": "https://jorge1061.github.io/Proyecto/img/Canciones/You are good.jpg",
+    "titulo": "You are good",
+    "enlaceVideo": "https://www.youtube.com/watch?v=708opj5poOc",
+    "enlaceAudio": "https://jorge1061.github.io/Proyecto/audio/You Are Good.mp3",
+    "acordes": "https://tabs.ultimate-guitar.com/tab/israel-houghton/you-are-good-chords-483875"
   },
   {
     "id": "C4",
@@ -38,12 +38,12 @@
   },
   {
     "id": "C5",
-    "banda": "Israel Houghton",
-    "imagenPortada": "https://jorge1061.github.io/Proyecto/img/Canciones/You are good.jpg",
-    "titulo": "You are good",
-    "enlaceVideo": "https://www.youtube.com/watch?v=708opj5poOc",
-    "enlaceAudio": "https://jorge1061.github.io/Proyecto/audio/You Are Good.mp3",
-    "acordes": "https://tabs.ultimate-guitar.com/tab/israel-houghton/you-are-good-chords-483875"
+    "banda": "Israel Houghton & New Breed",
+    "imagenPortada": "https://jorge1061.github.io/Proyecto/img/Canciones/In Jesus name.jpg",
+    "titulo": "In Jesus name",
+    "enlaceVideo": "https://www.youtube.com/watch?v=qehwr2MMTqg",
+    "enlaceAudio": "https://jorge1061.github.io/Proyecto/audio/In Jesus Name.mp3",
+    "acordes": "https://tabs.ultimate-guitar.com/tab/israel-new-breed/in-jesus-name-chords-1972731"
   },
   {
     "id": "C6",

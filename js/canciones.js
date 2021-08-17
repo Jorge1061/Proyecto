@@ -1,65 +1,16 @@
-var cP = 0;
-var cV = 0;
-var lP = 0;
-var lV = 0;
-
-function consejos(url, i, c) {
+$(function() {
+    var content = $("#contenedor")[0];
     $.ajax({
-        url: url,
+        url: 'https://jorge1061.github.io/Proyecto/json/canciones.json',
         success: function(response) {
-            if (lV == 0 && lV != lP)
-                for (lV = 0; response[lV + 1] != undefined; lV++);
-            if (lP == 0)
-                for (lP = 0; response[lP + 1] != undefined; lP++);
-            var content = $(".posts")[i];
-            content.innerHTML = "<img class='galeria' src='" + response[c].img_src + "' alt='Imagen no encontrada'>";
-
+            alert(response[0].imagenPortada);
+            for (var i = 0; response[i] != undefined; i++)
+                content.innerHTML += "<div class='item'><img src='" + response[i].imagenPortada + "' alt='Portada del álbum " + response[i].titulo + "' class='GImagen'><div class='GImagen-text'><h3>" + response[i].titulo + "</h3><p>Canción producida por" + response[i].banda + "</p><audio controls><source src='" + response[i].enlaceAudio + "' type='audio/mp3'>Tu navegador no soporta audio HTML5.</audio><a href='" + response[i].acordes + "'><strong>Acordes</strong></a>/<a href='" + response[i].enlaceVideo + "'><strong>Video</strong></a></div></div>";
         },
         error: function(response) {
             alert(response);
         }
     });
-}
 
-function back(element) {
-    if (element == "piano") {
-        if (cP == 0)
-            cP = lP;
-        else
-            cP--;
-        consejos('https://jorge1061.github.io/Proyecto/json/consejosPiano.json', 0, cP);
-    } else {
-        if (cV == 0)
-            cV = lV;
-        else
-            cV--;
-        consejos('https://jorge1061.github.io/Proyecto/json/consejosCanto.json', 1, cV);
-    }
-}
 
-function foward(element) {
-    if (element == "piano") {
-        if (cP == lP)
-            cP = 0;
-        else
-            cP++;
-        consejos('https://jorge1061.github.io/Proyecto/json/consejosPiano.json', 0, cP);
-    } else {
-        if (cV == lV)
-            cV = 0;
-        else
-            cV++;
-        consejos('https://jorge1061.github.io/Proyecto/json/consejosCanto.json', 1, cV);
-    }
-}
-
-$(function() {
-    consejos('https://jorge1061.github.io/Proyecto/json/consejosPiano.json', 0, cP);
-    consejos('https://jorge1061.github.io/Proyecto/json/consejosCanto.json', 1, cV);
-    $(".back").click(function() {
-        back($(this).attr("id"));
-    });
-    $(".foward").click(function() {
-        foward($(this).attr("id"));
-    });
 })
