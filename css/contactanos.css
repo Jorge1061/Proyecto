@@ -139,6 +139,7 @@ td {
 }
 
 .formulario_submit {
+    background: #c500ff;
     color: white;
     padding: 5px 10px;
     cursor: pointer;
