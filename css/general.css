@@ -241,6 +241,7 @@ footer p {
         flex-direction: column;
     }
     .menu nav ul li {
+        display: flex;
         max-width: 200px;
         height: 50px;
         justify-content: flex-start;

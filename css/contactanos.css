@@ -139,7 +139,6 @@ td {
 }
 
 .formulario_submit {
-    background: #c500ff;
     color: white;
     padding: 5px 10px;
     cursor: pointer;
@@ -273,9 +272,4 @@ h1 {
     text-align: center;
     color: green;
     padding: 5px;
-}
-
-a,
-#range {
-    background-color: #c500ff;
 }
